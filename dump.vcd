@@ -1,0 +1,267 @@
+$date
+	Fri Jun 26 23:25:08 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module mips32_tb $end
+$var reg 1 ! clk1 $end
+$var reg 1 " clk2 $end
+$scope module dut $end
+$var wire 1 ! clk1 $end
+$var wire 1 " clk2 $end
+$var parameter 6 # ADD $end
+$var parameter 6 $ ADDI $end
+$var parameter 6 % ANDD $end
+$var parameter 6 & BEQZ $end
+$var parameter 6 ' BNEQZ $end
+$var parameter 3 ( BRANCH $end
+$var parameter 3 ) HALT $end
+$var parameter 6 * HLT $end
+$var parameter 3 + LOAD $end
+$var parameter 6 , LW $end
+$var parameter 6 - MUL $end
+$var parameter 6 . ORR $end
+$var parameter 3 / RM_ALU $end
+$var parameter 3 0 RR_ALU $end
+$var parameter 6 1 SLT $end
+$var parameter 6 2 SLTI $end
+$var parameter 3 3 STORE $end
+$var parameter 6 4 SUB $end
+$var parameter 6 5 SUBI $end
+$var parameter 6 6 SW $end
+$var reg 32 7 EX_MEM_ALUOut [31:0] $end
+$var reg 32 8 EX_MEM_B [31:0] $end
+$var reg 32 9 EX_MEM_IR [31:0] $end
+$var reg 1 : EX_MEM_cond $end
+$var reg 3 ; EX_MEM_type [2:0] $end
+$var reg 32 < ID_EX_A [31:0] $end
+$var reg 32 = ID_EX_B [31:0] $end
+$var reg 32 > ID_EX_IMM [31:0] $end
+$var reg 32 ? ID_EX_IR [31:0] $end
+$var reg 32 @ ID_EX_NPC [31:0] $end
+$var reg 3 A ID_EX_type [2:0] $end
+$var reg 32 B IF_ID_IR [31:0] $end
+$var reg 32 C IF_ID_NPC [31:0] $end
+$var reg 32 D MEM_WB_ALUOut [31:0] $end
+$var reg 32 E MEM_WB_IR [31:0] $end
+$var reg 32 F MEM_WB_LMD [31:0] $end
+$var reg 3 G MEM_WB_type [2:0] $end
+$var reg 32 H PC [31:0] $end
+$var reg 1 I halted $end
+$var reg 1 J taken_branch $end
+$var integer 32 K i [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1001 6
+b1011 5
+b1 4
+b11 3
+b1100 2
+b100 1
+b0 0
+b1 /
+b11 .
+b101 -
+b1000 ,
+b10 +
+b111111 *
+b101 )
+b100 (
+b1101 '
+b1110 &
+b10 %
+b1010 $
+b0 #
+$end
+#0
+$dumpvars
+b10000000000 K
+0J
+0I
+b0 H
+b0 G
+b0 F
+b0 E
+b0 D
+b0 C
+b0 B
+b0 A
+b0 @
+b0 ?
+b0 >
+b0 =
+b0 <
+b0 ;
+0:
+b0 9
+b0 8
+b0 7
+0"
+0!
+$end
+#6000
+1!
+#8000
+b1 H
+b1 C
+b101000000000010000000000000101 B
+#11000
+0!
+#16000
+1"
+#18000
+b1 A
+b101 >
+b101000000000010000000000000101 ?
+b1 @
+#21000
+0"
+#26000
+1!
+#28000
+b101 7
+b101000000000010000000000000101 9
+b1 ;
+b10 H
+b10 C
+b101000000000100000000000001010 B
+#31000
+0!
+#36000
+1"
+#38000
+b101 D
+b101000000000010000000000000101 E
+b1 G
+b1010 >
+b101000000000100000000000001010 ?
+b10 @
+#41000
+0"
+#46000
+1!
+#48000
+b11 H
+b11 C
+b0 B
+b1010 7
+b101000000000100000000000001010 9
+#51000
+0!
+#56000
+1"
+#58000
+b0 A
+b0 >
+b0 ?
+b11 @
+b1010 D
+b101000000000100000000000001010 E
+#61000
+0"
+#66000
+1!
+#68000
+b0 7
+b0 9
+b0 ;
+b100 H
+b100 C
+#71000
+0!
+#76000
+1"
+#78000
+b0 D
+b0 E
+b0 G
+b100 @
+#81000
+0"
+#86000
+1!
+#88000
+b101 H
+b101 C
+b1000100001100000000000 B
+#91000
+0!
+#96000
+1"
+#98000
+b1100000000000 >
+b1000100001100000000000 ?
+b101 @
+b1010 =
+b101 <
+#101000
+0"
+#106000
+1!
+#108000
+b1111 7
+b1000100001100000000000 9
+b110 H
+b110 C
+b11111100000000000000000000000000 B
+#111000
+0!
+#116000
+1"
+#118000
+b1111 D
+b1000100001100000000000 E
+b101 A
+b0 >
+b11111100000000000000000000000000 ?
+b110 @
+b0 =
+b0 <
+#121000
+0"
+#126000
+1!
+#128000
+b111 H
+b111 C
+b0 B
+b0 7
+b11111100000000000000000000000000 9
+b101 ;
+#131000
+0!
+#136000
+1"
+#138000
+b0 A
+b0 ?
+b111 @
+b0 D
+b11111100000000000000000000000000 E
+b101 G
+#141000
+0"
+#146000
+1!
+#148000
+1I
+b0 9
+b0 ;
+b1000 H
+b1000 C
+#151000
+0!
+#156000
+1"
+#161000
+0"
+#166000
+1!
+#168000
